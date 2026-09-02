@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>CareerGuide AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- =====================================================
+     MAIN NAVIGATION
+     ===================================================== -->
+
+<nav class="main-navigation">
+
+    <div class="nav-logo">
+        🎓 CareerGuide AI
+    </div>
+
+    <div class="nav-buttons">
+
+        <button onclick="scrollToSection('skill-gap-section')">
+            🎯 Skill Gap
+        </button>
+
+        <button onclick="scrollToSection('summarizer-section')">
+            📚 Smart Summarizer
+        </button>
+
+        <button onclick="scrollToSection('career-blueprint-section')">
+            🗺️ Career Blueprint
+        </button>
+
+    </div>
+
+</nav>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🎓 CareerGuide <span>AI</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#assessment">Assessment</a>
+            <a href="#skillGap">Skill Gap</a>
+            <a href="#summarizer">Summarizer</a>
+            <a href="#blueprint">Career Blueprint</a>
+        </nav>
+
+        <button
+            class="nav-btn"
+            onclick="scrollToAssessment()">
+            Get Started
+        </button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <span class="badge">
+                    🚀 AI-Powered Career Guidance
+                </span>
+
+                <h1>
+                    Build Your
+                    <span>Future Career</span>
+                    With Confidence
+                </h1>
+
+                <p>
+                    Analyze your skills, discover skill gaps,
+                    summarize learning resources and create
+                    a personalized career roadmap.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button
+                        class="primary-btn"
+                        onclick="scrollToAssessment()">
+                        Start Assessment →
+                    </button>
+
+                    <button
+                        class="secondary-btn"
+                        onclick="showDemo()">
+                        ▶ View Demo
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Dashboard preview -->
+
+            <div class="hero-card">
+
+                <div class="card-header">
+
+                    <div>
+                        <small>
+                            Your Career Dashboard
+                        </small>
+
+                        <h3>
+                            Skill Analysis
+                        </h3>
+                    </div>
+
+                    <div class="profile-circle">
+                        👩‍🎓
+                    </div>
+
+                </div>
+
+                <div class="skill-preview">
+
+                    <div class="skill-row">
+                        <span>HTML & CSS</span>
+                        <strong>85%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:85%"></div>
+                    </div>
+
+                    <div class="skill-row">
+                        <span>JavaScript</span>
+                        <strong>65%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:65%"></div>
+                    </div>
+
+                    <div class="skill-row">
+                        <span>Communication</span>
+                        <strong>75%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:75%"></div>
+                    </div>
+
+                </div>
+
+                <div class="career-match">
+
+                    <span>
+                        🎯 Career Match
+                    </span>
+
+                    <strong>
+                        Frontend Developer
+                    </strong>
+
+                    <b>
+                        87%
+                    </b>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="features">
+
+        <div class="section-heading">
+
+            <span>OUR SOLUTION</span>
+
+            <h2>
+                Smart Tools For Career Planning
+            </h2>
+
+            <p>
+                Everything a student needs to identify,
+                learn and achieve their career goals.
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🎯
+                </div>
+
+                <h3>
+                    Precision Skill-Gap Visualizer
+                </h3>
+
+                <p>
+                    Compare your current skills directly
+                    with industry requirements.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📝
+                </div>
+
+                <h3>
+                    Smart Resource Summarizer
+                </h3>
+
+                <p>
+                    Convert lengthy lectures and documents
+                    into concise study material.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🗺️
+                </div>
+
+                <h3>
+                    Visual Career Blueprint
+                </h3>
+
+                <p>
+                    Get a step-by-step pathway towards
+                    exams and certifications.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📚
+                </div>
+
+                <h3>
+                    Free Learning Resources
+                </h3>
+
+                <p>
+                    Find free courses for your missing
+                    skills and career goals.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ASSESSMENT ================= -->
+
+    <section id="assessment"
+        class="assessment-section">
+
+        <div class="section-heading">
+
+            <span>
+                SMART ASSESSMENT
+            </span>
+
+            <h2>
+                Tell Us About Yourself
+            </h2>
+
+            <p>
+                Select your career and current skills.
+            </p>
+
+        </div>
+
+
+        <div class="assessment-container">
+
+            <form id="careerForm">
+
+                <div class="form-group">
+
+                    <label>
+                        Student Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="studentName"
+                        placeholder="Enter your name"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Education
+                    </label>
+
+                    <select id="education" required>
+
+                        <option value="">
+                            Select education
+                        </option>
+
+                        <option value="school">
+                            School Student
+                        </option>
+
+                        <option value="diploma">
+                            Diploma
+                        </option>
+
+                        <option value="undergraduate">
+                            Undergraduate
+                        </option>
+
+                        <option value="postgraduate">
+                            Postgraduate
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Career Interest
+                    </label>
+
+                    <select
+                        id="careerInterest"
+                        required>
+
+                        <option value="">
+                            Select career
+                        </option>
+
+                        <option value="frontend">
+                            Frontend Developer
+                        </option>
+
+                        <option value="backend">
+                            Backend Developer
+                        </option>
+
+                        <option value="data">
+                            Data Analyst
+                        </option>
+
+                        <option value="ai">
+                            AI / ML Engineer
+                        </option>
+
+                        <option value="cyber">
+                            Cybersecurity
+                        </option>
+
+                        <option value="designer">
+                            UI/UX Designer
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Select Your Current Skills
+                    </label>
+
+                    <div class="skill-selection">
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="html">
+                            HTML
+                        </label>
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="css">
+                            CSS
+                        </label>
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="javascript">
+                            JavaScript
+                        </label>
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="node">
+                            Node.js
+                        </label>
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="python">
+                            Python
+                        </label>
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="sql">
+                            SQL
+                        </label>
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="react">
+                            React
+                        </label>
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="communication">
+                            Communication
+                        </label>
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="problem">
+                            Problem Solving
+                        </label>
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="figma">
+                            Figma
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="primary-btn full-btn">
+
+                    🔍 Analyze My Skills
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         PRECISION SKILL GAP VISUALIZER
+         ================================================== -->
+
+    <section id="skillGap"
+        class="tool-section">
+
+        <div class="section-heading">
+
+            <span>
+                PRECISION SKILL-GAP VISUALIZER
+            </span>
+
+            <h2>
+                Student Skills vs Industry Needs
+            </h2>
+
+            <p>
+                See exactly which skills you have,
+                which skills are missing and what
+                you should learn next.
+            </p>
+
+        </div>
+
+
+        <div class="tool-container">
+
+            <div class="gap-summary">
+
+                <div class="gap-card">
+                    <span>✅</span>
+                    <strong id="matchedCount">
+                        0
+                    </strong>
+                    <small>
+                        Skills Matched
+                    </small>
+                </div>
+
+
+                <div class="gap-card missing">
+                    <span>⚠️</span>
+                    <strong id="missingCount">
+                        0
+                    </strong>
+                    <small>
+                        Skills Missing
+                    </small>
+                </div>
+
+
+                <div class="gap-card">
+                    <span>🎯</span>
+                    <strong id="industryCount">
+                        0
+                    </strong>
+                    <small>
+                        Industry Skills
+                    </small>
+                </div>
+
+            </div>
+
+
+            <div id="gapVisualization">
+
+                <p class="empty-message">
+                    Complete the assessment above
+                    to see your skill gap.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+    <!-- =========================================================
+     PRECISION SKILL-GAP VISUALIZER
+     ========================================================= -->
+
+<section class="skill-gap-section">
+
+    <div class="section-heading">
+
+        <h2>🎯 Precision Skill-Gap Visualizer</h2>
+
+        <p>
+            Compare your current skills with industry requirements
+            and discover exactly what you need to learn.
+        </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         INPUT CARD
+         ===================================================== -->
+
+    <div class="skill-gap-card">
+
+        <!-- Student Name -->
+        <div class="form-group">
+
+            <label for="studentName">
+                👤 Student Name
+            </label>
+
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Enter your name"
+            >
+
+        </div>
+
+<!-- =========================================================
+     VISUAL CAREER BLUEPRINT
+     ========================================================= -->
+
+<section class="career-blueprint-section">
+
+    <div class="section-heading">
+
+        <h2>🗺️ Visual Career Blueprint</h2>
+
+        <p>
+            Get a step-by-step pathway from your current level
+            to your desired career.
+        </p>
+
+    </div>
+
+
+    <!-- Career Selection -->
+
+    <div class="blueprint-input-card">
+
+        <div class="form-group">
+
+            <label for="blueprintCareer">
+                🎯 Select Your Career Goal
+            </label>
+
+            <select id="blueprintCareer">
+
+                <option value="">
+                    -- Select Career --
+                </option>
+
+                <option value="software">
+                    Software Developer
+                </option>
+
+                <option value="web">
+                    Full Stack Web Developer
+                </option>
+
+                <option value="data">
+                    Data Analyst
+                </option>
+
+                <option value="cyber">
+                    Cybersecurity Analyst
+                </option>
+
+                <option value="ai">
+                    AI / Machine Learning Engineer
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <button
+            class="primary-btn"
+            onclick="generateCareerBlueprint()">
+
+            🚀 Generate Career Blueprint
+
+        </button>
+
+    </div>
+
+
+    <!-- Blueprint Result -->
+
+    <div
+        id="careerBlueprintResult"
+        class="career-blueprint-result hidden">
+
+    </div>
+
+</section>
+        <!-- Career Selection -->
+        <div class="form-group">
+
+            <label for="careerSelect">
+                💼 Target Career
+            </label>
+
+            <select id="careerSelect">
+
+                <option value="">
+                    -- Select your target career --
+                </option>
+
+                <option value="software">
+                    Software Developer
+                </option>
+
+                <option value="data">
+                    Data Analyst
+                </option>
+
+                <option value="web">
+                    Full Stack Web Developer
+                </option>
+
+                <option value="cyber">
+                    Cybersecurity Analyst
+                </option>
+
+                <option value="ai">
+                    AI / Machine Learning Engineer
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- Student Skills -->
+        <div class="form-group">
+
+            <label for="studentSkills">
+                🧠 Your Current Skills
+            </label>
+
+            <textarea
+                id="studentSkills"
+                rows="5"
+                placeholder="Example: HTML, CSS, JavaScript, Python"
+            ></textarea>
+
+            <small>
+                Separate your skills using commas.
+            </small>
+
+        </div>
+
+
+        <!-- Analyze Button -->
+
+        <button
+            class="primary-btn"
+            onclick="analyzeSkillGap()">
+
+            🔍 Analyze My Skill Gap
+
+        </button>
+
+    </div>
+    <!-- ==================================================
+         SMART SUMMARIZER
+         ================================================== -->
+
+    <section id="summarizer"
+        class="tool-section summarizer-section">
+
+        <div class="section-heading">
+
+            <span>
+                SMART RESOURCE & LECTURE SUMMARIZER
+            </span>
+
+            <h2>
+                Turn Long Content Into Quick Notes
+            </h2>
+
+            <p>
+                Paste lecture or study material below
+                and generate concise notes, formulas
+                and quiz questions.
+            </p>
+
+        </div>
+
+<div class="summarizer-container">
+
+
+    <!-- =====================================================
+         RESULT
+         ===================================================== -->
+
+    <div
+        id="skillGapResult"
+        class="skill-gap-result hidden">
+
+    </div>
+
+</section>
+<!-- =================================================
+     YOUTUBE LECTURE URL
+     ================================================= -->
+
+
+<!-- =================================================
+     LECTURE / DOCUMENT TEXT
+     ================================================= -->
+<!-- =================================================
+     YOUTUBE LECTURE URL
+     ================================================= -->
+
+<div class="form-group">
+
+    <label for="youtubeURL">
+        🎥 YouTube Lecture URL
+    </label>
+
+    <input
+        type="text"
+        id="youtubeURL"
+        placeholder="Paste YouTube lecture URL here..."
+    >
+
+    <small>
+        Paste a YouTube lecture that has captions/subtitles.
+    </small>
+
+</div>
+
+
+<!-- =================================================
+     OR
+     ================================================= -->
+
+<div class="or-divider">
+    <span>OR</span>
+</div>
+
+    <!-- =================================================
+         LECTURE / DOCUMENT TEXT
+         ================================================= -->
+
+    <div class="form-group">
+
+        <label for="lectureText">
+            📄 Lecture / Document Content
+        </label>
+
+        <textarea
+            id="lectureText"
+            rows="10"
+            placeholder="Paste your lecture notes, study material or document text here..."
+        ></textarea>
+
+    </div>
+                
+<!-- =================================================
+     LECTURE / DOCUMENT TEXT
+     ================================================= -->
+
+
+
+<button
+    class="primary-btn"
+    onclick="generateSummary()">
+
+    ✨ Generate Smart Summary
+
+</button>
+
+
+<div
+    id="summaryResult"
+    class="summary-result hidden">
+    
+
+
+    
+
+<!-- =================================================
+     OR
+     ================================================= -->
+
+<div class="or-divider">
+    <span>OR</span>
+</div>
+
+    <!-- =================================================
+         LECTURE / DOCUMENT TEXT
+         ================================================= -->
+
+    <div class="form-group">
+
+        <label for="lectureText">
+            📄 Lecture / Document Content
+        </label>
+
+        <textarea
+            id="lectureText"
+            rows="10"
+            placeholder="Paste your lecture notes, study material or document text here..."
+        ></textarea>
+
+    </div>
+                <button
+                class="primary-btn"
+                onclick="generateSummary()">
+
+                ✨ Generate Smart Summary
+
+            </button>
+
+
+            <div
+                id="summaryResult"
+                class="summary-result hidden">
+
+                <h3>
+                    📝 Bullet Notes
+                </h3>
+
+                <div id="bulletNotes"></div>
+
+
+                <h3>
+                    📐 Formula Sheet
+                </h3>
+
+                <div id="formulaSheet"></div>
+
+
+                <h3>
+                    🧠 Quick Quiz
+                </h3>
+
+                <div id="quiz"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         VISUAL CAREER BLUEPRINT
+         ================================================== -->
+
+    <section id="blueprint"
+        class="tool-section">
+
+        <div class="section-heading">
+
+            <span>
+                VISUAL CAREER BLUEPRINT
+            </span>
+
+            <h2>
+                Your Step-by-Step Career Path
+            </h2>
+
+            <p>
+                Select a career to generate a visual
+                learning and certification pathway.
+            </p>
+
+        </div>
+
+
+        <div class="blueprint-container">
+
+            <div class="blueprint-selector">
+
+                <label>
+                    Select Career
+                </label>
+
+                <select
+                    id="blueprintCareer"
+                    onchange="generateBlueprint()">
+
+                    <option value="">
+                        Choose a career
+                    </option>
+
+                    <option value="frontend">
+                        Frontend Developer
+                    </option>
+
+                    <option value="backend">
+                        Backend Developer
+                    </option>
+
+                    <option value="data">
+                        Data Analyst
+                    </option>
+
+                    <option value="ai">
+                        AI / ML Engineer
+                    </option>
+
+                    <option value="cyber">
+                        Cybersecurity
+                    </option>
+
+                    <option value="designer">
+                        UI/UX Designer
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div
+                id="blueprintResult"
+                class="blueprint-result">
+
+                <p class="empty-message">
+                    Select a career to view its blueprint.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         FREE COURSES
+         ================================================== -->
+
+    <section class="tool-section course-section">
+
+        <div class="section-heading">
+
+            <span>
+                FREE LEARNING RESOURCES
+            </span>
+
+            <h2>
+                Learn The Skills You Are Missing
+            </h2>
+
+            <p>
+                Recommended free resources for
+                improving your career skills.
+            </p>
+
+        </div>
+
+
+        <div
+            id="courseContainer"
+            class="course-grid">
+
+            <!-- Courses generated by JavaScript -->
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🎓 CareerGuide AI
+        </div>
+
+        <p>
+            AI-powered career guidance for students.
+        </p>
+
+        <p class="copyright">
+            © 2026 CareerGuide AI | Working Prototype
+        </p>
+
+    </footer>
+
+
+    <!-- Connect JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
